@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #534f4f;
+        }
+
+        header {
+            background-color: #e78a10;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ca7f1c;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #fffafa;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Permitir flexibilidad en móviles */
+            padding: 2rem;
+        }
+
+        .section {
+            width: 45%;
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-bottom: 1rem; /* Espacio entre secciones en móviles */
+        }
+
+        .section h2 {
+            text-align: center;
+        }
+
+        .section .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .section img {
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+        }
+
+        .section button {
+            margin-left: auto;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .section button:hover {
+            background-color: #555;
+        }
+
+        /* Media Queries para responsividad */
+        @media (max-width: 768px) {
+            .section {
+                width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+            }
+
+            nav {
+                flex-direction: column; /* Menú de navegación en columna */
+            }
+
+            nav a {
+                margin: 0.5rem 0; /* Espacio entre enlaces de navegación en móviles */
+            }
+     }
+     </style>
+    <script>
+        function mostrarMensaje() {
+            alert("Usted ha comprado esta imagen");
+        }
+    </script>
+
+<script>
+    function mostrarMensaje2() {
+        alert("Usted ha comprado este Álbum");
+    }
+</script>
+</head>
+<body>
+
+    <header>
+        <h1>Graphic Shopping</h1>
+    </header>
+
+    <nav>
+        <a href="#imagenes">Imágenes</a>
+        <a href="#musica">Música</a>
+    </nav>
+
+    <div class="container">
+        <!-- Sección de Imágenes -->
+        <div class="section" id="imagenes">
+            <h2>Imágenes</h2>
+            <div class="item">
+                <img src="artista/artista 1.jfif" alt="Imagen 1">
+                <p>Rostro de mujer Abstracto</p>
+                <button onclick="mostrarMensaje()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="artista/artista 10.jfif" alt="Imagen 2">
+                <p>Gouache</p>
+                <button onclick="mostrarMensaje()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="artista/artista 2.jfif" alt="Imagen 3">
+                <p>smells</p>
+                <button onclick="mostrarMensaje()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="artista/artista 3.jfif" alt="Imagen 1">
+                <p>Lasow</p>
+                <button onclick="mostrarMensaje()">Comprar</button>
+            </div>
+
+            <div class="item">
+                <img src="artista/artista 4.jfif" alt="Imagen 1">
+                <p>NOCHE en venecia</p>
+                <button onclick="mostrarMensaje()">Comprar</button>
+            </div>
+
+            <div class="item">
+                <img src="artista/artista 5.jfif" alt="Imagen 1">
+                <p>abstracto</p>
+                <button onclick="mostrarMensaje()">Comprar</button>
+            </div>
+
+            <div class="item">
+                <img src="artista/artista 7.jfif" alt="Imagen 1">
+                <p>Primavera</p>
+                <button onclick="mostrarMensaje()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="artista/artista 8.jfif" alt="Imagen 1">
+                <p>Colibri paint</p>
+                <button onclick="mostrarMensaje()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="artista/artista 9.jfif" alt="Imagen 1">
+                <p>Gaturro</p>
+                <button onclick="mostrarMensaje()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="artista/artistas 6.jfif" alt="Imagen 1">
+                <p>Dia Noche Canvas</p>
+                <button onclick="mostrarMensaje()">Comprar</button>
+            </div>
+     </div>
+
+        <!-- Sección de Música -->
+        <div class="section" id="musica">
+            <h2>Música</h2>
+            <div class="item">
+                <img src="albunes/DATA.jpeg" alt="Imagen 1">
+                <p>DATA</p>
+                <p>-Tainy</p>
+                <button onclick="mostrarMensaje2()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="albunes/EL ÚLTIMO TOUR DEL MUNDO.jpeg" alt="Imagen 2">
+                <p>EL ÚLTIMO TOUR DEL MUNDO</p>
+                <p>-Bad BUNNY</p>
+                <button onclick="mostrarMensaje2()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="albunes/LA VIDA ES UNA.jpeg" alt="Imagen 3">
+                <p>LA VIDA ES UNA</p>
+                <p>-Myke Towers</p>
+                <button onclick="mostrarMensaje2()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="albunes/Las Leyendas Nunca Mueren.jpeg" alt="Imagen 1">
+                <p>Las Leyendas Nunca Mueren</p>
+                <p>-Anuel AA</p>
+                <button onclick="mostrarMensaje2()">Comprar</button>
+            </div>
+
+            <div class="item">
+                <img src="albunes/SAYONARA.jpeg" alt="Imagen 1">
+                <p>SAYONARA</p>
+                <p>-Alvaro Días</p>
+                <button onclick="mostrarMensaje2()">Comprar</button>
+            </div>
+
+            <div class="item">
+                <img src="albunes/Un Verano Sin Ti.jpeg" alt="Imagen 1">
+                <p>Un Verano Sin Ti</p>
+                <p>-Bad BUNNY</p>
+                <button onclick="mostrarMensaje2()">Comprar</button>
+            </div>
+
+            <div class="item">
+                <img src="albunes/VICE VERSA.jpeg" alt="Imagen 1">
+                <p>VICE VERSA</p>
+                <p>-Rauw Alejandro</p>
+                <button onclick="mostrarMensaje2()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="albunes/X 100PRE.jpeg" alt="Imagen 1">
+                <p>-Bad BUNNY</p>
+                <button onclick="mostrarMensaje2()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="albunes/y.h.l.q.m.d.l.g.jpeg" alt="Imagen 1">
+                <p>Y.H.L.Q.M.D.L.G</p>
+                <p>-Bad BUNNY</p>
+                <button onclick="mostrarMensaje2()">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="albunes/Éxodo.jpeg" alt="Imagen 1">
+                <p>Éxodo</p>
+                <p>-Peso Pluma</p>
+                <button onclick="mostrarMensaje2()">Comprar</button>
+            </div>
+     </div>
+
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto y Suscripción</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+        form input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logotipo del Proyecto -->
+        <header>
+    
+            <img src="KKZQ3798.PNG" alt="logotipo">
+
+        <!-- Información de Contacto -->
+        <section>
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta, no dudes en contactarnos a: <a href="Graphic Shopping507@gmail.com">Graphic Shopping507@gmail.com</a></p>
+        </section>
+
+
+        <!-- Formulario de Suscripción al Boletín -->
+        <section>
+            <h2>Suscríbete a Nuestro Boletín</h2>
+            <form action="suscribirse.php" method="post">
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <input type="submit" value="Suscribirse">
+            </form>
+        </section>
+
+        <!-- Derechos de Autor -->
+        <footer>
+            <p>&copy; 2024 Graphic Shopping. Todos los derechos reservados.</p>
+        </footer>
+    </div>  
+
+</body>
+</html>
